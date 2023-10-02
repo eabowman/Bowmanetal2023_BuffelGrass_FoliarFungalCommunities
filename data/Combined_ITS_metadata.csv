@@ -1,0 +1,119 @@
+SampleID,Illumina,Latitude,Longitude,Sample_code,Year,Host,Site,Location,Wash,Plant_Part,Range,Q1,Q2,Q3,Q4,Rain_mm_30yr_Av,Tmean_C_30yr
+x1,x1,28.271468,-100.165311,TX_IF_Wet_C_cenchrus,2015,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+x2,x2,28.271468,-100.165311,TX_IF_Dry_C_cenchrus,2015,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Dry,Invasive,Y,Y,N,N,525.34,22.23
+x3,x3,28.271464,-100.165357,TX_IF_Wet_Bouteloua,2015,Bouteloua curtipendula,Indio Faith,US,Unwashed,Leaf Green,Native,N,Y,N,N,525.34,22.23
+x5,x5,33.409545,-111.876098,AZ_Wet_C_cenchrus,2015,Cenchrus ciliaris,Arizona,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,236.64,22.46
+x6,x6,28.271322,-100.165213,TX_IF_Wet_P_bicolor,2015,Pappophorum bicolor,Indio Faith,US,Unwashed,Leaf Green,Native,N,Y,N,N,525.34,22.23
+x7,x7,27.16867,-97.929903,TX_LP_Wet_C_cenchrus,2015,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+x8,x8,27.16867,-97.929903,TX_LP_Wet_C_cenchrus,2015,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+x9,x9,27.168595,-97.929592,TX_LP_Wet_S_cryptandrum,2015,Sporobolus cryptandrus,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+x10,x10,27.169026,-97.929614,TX_LP_Wet_P_maximum,2015,Panicum maximum,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+BG.ITS.01,BGITS01,28.277308,-100.161691,IF_BG_g_3,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.02,BGITS02,28.277567,-100.16174,IF_BG_g_4,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.03,BGITS03,28.271504,-100.165295,IF_BG_g_5,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.04,BGITS04,28.277421,-100.161601,IF_BG_g_6,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.05,BGITS05,28.277419,-100.161762,IF_BG_g_7,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.06,BGITS06,28.271359,-100.165259,IF_BG_g_8,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.07,BGITS07,28.271464,-100.165357,IF_BG_g_9,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.08,BGITS08,28.271417,-100.165354,IF_BG_g_10,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.09,BGITS09,28.277493,-100.161715,IF_BG_g_11,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.10,BGITS10,28.277416,-100.161706,IF_BG_g_12,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.11,BGITS11,28.271529,-100.165083,IF_BG_g_13,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.12,BGITS12,28.271489,-100.165081,IF_BG_g_14,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.13,BGITS13,28.271444,-100.165072,IF_BG_g_15,2016,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+BG.ITS.14,BGITS14,28.271302,-100.165182,IF_Bc_g_2,2016,Bouteloua curtipendula,Indio Faith,US,Unwashed,Leaf Green,Native,N,Y,N,N,525.34,22.23
+BG.ITS.15,BGITS15,28.271268,-100.165225,IF_Bc_g_3,2016,Bouteloua curtipendula,Indio Faith,US,Unwashed,Leaf Green,Native,N,Y,N,N,525.34,22.23
+BG.ITS.16,BGITS16,28.271515,-100.165215,IF_Hm_g_2,2016,Hilaria mutica,Indio Faith,US,Unwashed,Leaf Green,Native,N,Y,N,N,525.34,22.23
+BG.ITS.17,BGITS17,28.271468,-100.165179,IF_Hm_g_3,2016,Hilaria mutica,Indio Faith,US,Unwashed,Leaf Green,Native,N,Y,N,N,525.34,22.23
+BG.ITS.18,BGITS18,28.271408,-100.16534,IF_Pb_g_3,2016,Pappophorum bicolor,Indio Faith,US,Unwashed,Leaf Green,Native,N,Y,N,N,525.34,22.23
+BG.ITS.19,BGITS19,27.168536,-97.92992,LP_BG_g_2,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+BG.ITS.20,BGITS20,27.168587,-97.929934,LP_BG_g_3,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+BG.ITS.21,BGITS21,27.192885,-97.966307,LP_BG_g_4,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,646.56,22.64
+BG.ITS.22,BGITS22,27.16867,-97.929903,LP_BG_g_5,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+BG.ITS.23,BGITS23,27.192596,-97.966066,LP_BG_g_6,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,646.56,22.64
+BG.ITS.24,BGITS24,27.168868,-97.929887,LP_BG_g_7,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+BG.ITS.25,BGITS25,27.168928,-97.929914,LP_BG_g_8,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+BG.ITS.26,BGITS26,27.168957,-97.929937,LP_BG_g_9,2016,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,660.7,22.61
+BG.ITS.27,BGITS27,27.168617,-97.929907,LP_Bi_g_2,2016,Bothriocloa ischaemum,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+BG.ITS.28,BGITS28,27.168595,-97.929943,LP_Bi_g_3,2016,Bothriocloa ischaemum,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+BG.ITS.29,BGITS29,27.168567,-97.929348,LP_Hc_g_3,2016,Heteropogon contortus,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+BG.ITS.30,BGITS30,27.168739,-97.929825,LP_Sc_g_2,2016,Sporobolus cryptandrus,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+BG.ITS.31,BGITS31,27.168501,-97.929347,LP_Se_g_1,2016,Setaria sp,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+BG.ITS.32,BGITS32,27.168467,-97.929353,LP_Se_g_2,2016,Setaria sp,La Paloma,US,Unwashed,Leaf Green,Native,N,Y,N,N,660.7,22.61
+BG.ITS.33,BGITS33,28.510505,-98.442656,DA_BG_g_1,2016,Cenchrus ciliaris,Daughtry,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,633.03,21.93
+BG.ITS.34,BGITS34,28.51052,-98.442701,DA_BG_g_2,2016,Cenchrus ciliaris,Daughtry,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,633.03,21.93
+BG.ITS.35,BGITS35,28.510527,-98.442755,DA_BG_g_3,2016,Cenchrus ciliaris,Daughtry,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,633.03,21.93
+BG.ITS.36,BGITS36,26.584573,-99.14997,FA_BG_g_1,2016,Cenchrus ciliaris,Falcon Lake,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,500.67,23.64
+BG.ITS.37,BGITS37,26.584573,-99.14997,FA_BG_g_2,2016,Cenchrus ciliaris,Falcon Lake,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,500.67,23.64
+BG.ITS.38,BGITS38,26.584515,-99.149943,FA_BG_g_3,2016,Cenchrus ciliaris,Falcon Lake,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,500.67,23.64
+BG.ITS.39,BGITS39,26.58671,-97.879452,RA_BG_g_1,2016,Cenchrus ciliaris,Raymondville,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,631.78,23.36
+BG.ITS.40,BGITS40,26.586713,-97.879491,RA_BG_g_2,2016,Cenchrus ciliaris,Raymondville,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,631.78,23.36
+BG.ITS.41,BGITS41,26.586703,-97.879524,RA_BG_g_3,2016,Cenchrus ciliaris,Raymondville,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,631.78,23.36
+BG.ITS.42,BGITS42,27.751349,-99.509355,RE_BG_g_1,2016,Cenchrus ciliaris,Retama,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,518.77,22.51
+BG.ITS.43,BGITS43,27.751407,-99.509286,RE_BG_g_2,2016,Cenchrus ciliaris,Retama,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,518.77,22.51
+BG.ITS.44,BGITS44,27.751449,-99.509313,RE_BG_g_3,2016,Cenchrus ciliaris,Retama,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,518.77,22.51
+BG.ITS.45,BGITS45,29.218172,-100.778096,MD_BG_g_1,2016,Cenchrus ciliaris,Moody Ranch Del Rio,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,516.35,21.57
+BG.ITS.46,BGITS46,29.218138,-100.778079,MD_BG_g_2,2016,Cenchrus ciliaris,Moody Ranch Del Rio,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,516.35,21.57
+BG.ITS.47,BGITS47,33.409545,-111.876098,PA_BG_g_2,2016,Cenchrus ciliaris,Phoenix,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,236.64,22.46
+BG.ITS.48,BGITS48,33.45745,-111.830859,PA_BG_g_3,2016,Cenchrus ciliaris,Phoenix,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,244.07,22.37
+CA.BB.g.1,CABBg1,28.343782,-99.615378,CA_BB_g_1,2017,Cenchrus ciliaris blue?,Catarina,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,495.47,22.51
+CA.BG.g.1,CABGg1,28.34375,-99.615803,CA_BG_g_1,2017,Cenchrus ciliaris,Catarina,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,495.47,22.51
+DA.Bi.g.1,DABig1,28.5103,-98.442831,DA_Bi_g_1,2017,Bothriocloa ischaemum,Daughtry,US,Unwashed,Leaf Green,Native,N,N,N,N,633.03,21.93
+FA.Ar.g.1,FAArg1,26.584783,-99.149978,FA_Ar_g_1,2017,Aristida sp,Falcon Lake,US,Unwashed,Leaf Green,Native,N,N,N,N,500.67,23.64
+IF.BG.EtOH.b1,IFBGEtOHb1,28.271468,-100.165311,IF_BG_EtOH_b1,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Leaf Dry,Invasive,N,N,N,N,525.34,22.23
+IF.BG.EtOH.b2,IFBGEtOHb2,28.271468,-100.165311,IF_BG_EtOH_b2,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Leaf Dry,Invasive,N,N,N,N,525.34,22.23
+IF.BG.EtOH.g1,IFBGEtOHg1,28.271468,-100.165311,IF_BG_EtOH_g1,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Leaf Green,Invasive,N,N,N,N,525.34,22.23
+IF.BG.EtOH.g2,IFBGEtOHg2,28.271468,-100.165311,IF_BG_EtOH_g2,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Leaf Green,Invasive,N,N,N,N,525.34,22.23
+IF.BG.EtOH.l1,IFBGEtOHl1,28.271468,-100.165311,IF_BG_EtOH_l1,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Litter,Invasive,N,N,N,Y,525.34,22.23
+IF.BG.EtOH.l2,IFBGEtOHl2,28.271468,-100.165311,IF_BG_EtOH_l2,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Litter,Invasive,N,N,N,Y,525.34,22.23
+IF.BG.EtOH.r1,IFBGEtOHr1,28.271468,-100.165311,IF_BG_EtOH_r1,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Root,Invasive,N,N,N,Y,525.34,22.23
+IF.BG.EtOH.r2,IFBGEtOHr2,28.271468,-100.165311,IF_BG_EtOH_r2,2017,Cenchrus ciliaris,Indio Faith,US,Ethanol,Root,Invasive,N,N,N,Y,525.34,22.23
+IF.BG.g.16,IFBGg16,28.271512,-100.165297,IF_BG_g_16,2017,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+IF.BG.g.17,IFBGg17,28.271455,-100.165315,IF_BG_g_17,2017,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+IF.BG.g.18,IFBGg18,28.276966,-100.161661,IF_BG_g_18,2017,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+IF.BG.g.19,IFBGg19,28.276935,-100.161715,IF_BG_g_19,2017,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,Y,Y,Y,N,525.34,22.23
+IF.BG.sl.1,IFBGsl1,28.252177,-100.144616,IF_BG_sl_1,2017,Cenchrus ciliaris,Indio Faith,US,Washed,Leaf Green,Invasive,N,N,Y,N,526.86,22.32
+IF.BG.ul.1,IFBGul1,28.252177,-100.144616,IF_BG_ul_1,2017,Cenchrus ciliaris,Indio Faith,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,526.86,22.32
+LP.BG.sl.1,LPBGsl1,27.16867,-97.929903,LP_BG_sl_1,2017,Cenchrus ciliaris,La Paloma,US,Washed,Leaf Green,Invasive,N,N,N,Y,660.7,22.61
+LP.BG.sr.1,LPBGsr1,27.16867,-97.929903,LP_BG_sr_1,2017,Cenchrus ciliaris,La Paloma,US,Washed,Root,Invasive,N,N,N,Y,660.7,22.61
+LP.BG.ul.1,LPBGul1,27.16867,-97.929903,LP_BG_ul_1,2017,Cenchrus ciliaris,La Paloma,US,Unwashed,Leaf Green,Invasive,N,N,Y,Y,660.7,22.61
+LP.BG.ur.1,LPBGur1,27.16867,-97.929903,LP_BG_ur_1,2017,Cenchrus ciliaris,La Paloma,US,Unwashed,Root,Invasive,N,N,N,Y,660.7,22.61
+MD.Ch.g.1,MDChg1,29.217771,-100.777666,MD_Ch_g_1,2017,Chloris sp.,Moody Ranch Del Rio,US,Unwashed,Leaf Green,Native,N,N,N,N,516.35,21.57
+MD.Pb.g.1,MDPbg1,29.220343,-100.778313,MD_Pb_g_1,2017,Pappophorum bicolor,Moody Ranch Del Rio,US,Unwashed,Leaf Green,Native,N,N,N,N,516.35,21.57
+MD.Pb.g.2,MDPbg2,29.220342,-100.778313,MD_Pb_g_2,2017,Pappophorum bicolor,Moody Ranch Del Rio,US,Unwashed,Leaf Green,Native,N,N,N,N,516.35,21.57
+MD.Ss.g.1,MDSsg1,29.217783,-100.777653,MD_Ss_g_1,2017,Sporobolus sp,Moody Ranch Del Rio,US,Unwashed,Leaf Green,Native,N,N,N,N,516.35,21.57
+PA.BG.g.4,PABGg4,33.274551,-111.361745,PA_BG_g_4,2017,Cenchrus ciliaris,Phoenix,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,288.34,22.08
+RA.Ch.g.1,RAChg1,26.586701,-97.879755,RA_Ch_g_1,2017,Chloris sp.,Raymondville,US,Unwashed,Leaf Green,Native,N,N,N,N,631.78,23.36
+RA.Pa.g.1,RAPag1,26.586694,-97.879669,RA_Pa_g_1,2017,Panicum antidotale,Raymondville,US,Unwashed,Leaf Green,Native,N,N,N,N,631.78,23.36
+RE.BG.g.4,REBGg4,27.762477,-99.512661,RE_BG_g_4,2017,Cenchrus ciliaris,Retama,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,518.77,22.51
+RE.BG.g.5,REBGg5,27.723196,-99.583218,RE_BG_g_5,2017,Cenchrus ciliaris,Retama,US,Unwashed,Leaf Green,Invasive,N,N,Y,N,513.15,22.86
+RE.Se.g.1,RESeg1,27.751451,-99.509259,RE_Se_g_1,2017,Sporobolus sp,Retama,US,Unwashed,Leaf Green,Native,N,N,N,N,518.77,22.51
+RE.Ss.g.1,RESsg1,27.751565,-99.509369,RE_Ss_g_1,2017,Sporobolus sp,Retama,US,Unwashed,Leaf Green,Native,N,N,N,N,518.77,22.51
+x4,x4,0.34503,36.91274,Kenya_Wet_C_cenchrus,2015,Cenchrus ciliaris,Kenya,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+BG.ITS.49,BGITS49,3.138583,35.8656,KT_BG_g_2,2016,Cenchrus ciliaris,Kenya Terkana,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,182,28.9
+BG.ITS.50,BGITS50,3.138583,35.8656,KT_BG_g_3,2016,Cenchrus ciliaris,Kenya Terkana,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,182,28.9
+KM.BG.ff.1,KMBGFF1,0.291336,36.897805,KM_BG_ff_1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.cf1,KMBGgCF1,0.34503,36.91274,KM_BG_g_cf1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.cf2,KMBGgCF2,0.34503,36.91274,KM_BG_g_cf2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.cs1,KMBGgcs1,0.28464,36.90813,KM_BG_g_cs1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.cs2,KMBGgcs2,0.28464,36.90813,KM_BG_g_cs2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.db1,KMBGgdb1,0.46289,36.86576,KM_BG_g_db1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.db2,KMBGgdb2,0.46289,36.86576,KM_BG_g_db2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.el1,KMBGgel1,0.46732,36.93677,KM_BG_g_el1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.el2,KMBGgel2,0.46732,36.93677,KM_BG_g_el2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.lj1,KMBGglj1,0.34344,36.92721,KM_BG_g_lj1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.lj2,KMBGglj2,0.34344,36.92721,KM_BG_g_lj2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.me1,KMBGgme1,0.29406,36.90068,KM_BG_g_me1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.me2,KMBGgme2,0.29406,36.90068,KM_BG_g_me2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.mk1,KMBGgmk1,0.39645,36.86818,KM_BG_g_mk1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.mk2,KMBGgmk2,0.39645,36.86818,KM_BG_g_mk2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.rh1,KMBGgrh1,0.32394,36.90583,KM_BG_g_rh1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.rh2,KMBGgrh2,0.32394,36.90583,KM_BG_g_rh2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.rl1,KMBGgrl1,0.40794,36.90798,KM_BG_g_rl1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.g.rl2,KMBGgrl2,0.40794,36.90798,KM_BG_g_rl2,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,637.31,18.3
+KM.BG.sl.1,KMBGsl1,0.29259,36.8984,KM_BG_sl_1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Washed,Leaf Green,Native,N,N,Y,Y,637.31,18.3
+KM.BG.sr.1,KMBGsr1,0.29259,36.8984,KM_BG_sr_1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Washed,Root,Native,N,N,Y,Y,637.31,18.3
+KM.BG.ul.1,KMBGul1,0.29259,36.8984,KM_BG_ul_1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Leaf Green,Native,N,N,Y,Y,637.31,18.3
+KM.BG.ur.1,KMBGur1,0.29259,36.8984,KM_BG_ur_1,2017,Cenchrus ciliaris,Kenya Impala,Kenya,Unwashed,Root,Native,N,N,Y,Y,637.31,18.3
+KT.BG.g.4,KTBGg4,3.136885,35.866514,KT_BG_g_4,2017,Cenchrus ciliaris,Kenya Terkana,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,182,28.9
+KT.BG.g.5,KTBGg5,3.135352,35.866007,KT_BG_g_5,2017,Cenchrus ciliaris,Kenya Terkana,Kenya,Unwashed,Leaf Green,Native,N,N,Y,N,182,28.9
