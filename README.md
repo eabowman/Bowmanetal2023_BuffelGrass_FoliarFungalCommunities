@@ -11,7 +11,8 @@ Data and analysis code associated with the manuscript "Invasive buffelgrass, Cen
 The following code will load libraries and run the analyses. Output files will go into folders marked figures/ and results/. Please create these folders prior to running the code. Output names should match figure and table names in the manuscript.
 
 ## Load libraries
-```{r, include = F}
+If you have not previously installed these libraries, you will need to go into the file and uncomment the install.packages() commands for the libraries that need to be installed. 
+```{r, include = T}
 source("LoadLibraries.R")
 ```
 
