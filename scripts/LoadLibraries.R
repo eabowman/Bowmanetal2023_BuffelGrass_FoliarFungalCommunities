@@ -27,35 +27,7 @@ library(cooccur)
 # devtools::install_github("traitecoevo/fungaltraits")
 library(fungaltraits)
 
-install.packages("remotes")
+# install.packages("remotes")
 remotes::install_github("kassambara/rstatix")
 
 install.packages("rcompanion")
-
-##===================================================================##
-
-source('E13-133.scripts/triplot.rda_function.R')
-
-# install.packages('adespatial')
-library(adespatial)
-
-# install.packages('ggpubr')
-library(ggpubr)
-
-# install.packages('betapart')
-library(betapart)
-
-
-
-
-
-# install.packages('ggpubr')
-library(ggpubr) # to isolate legend
-
-# install.packages('FD')
-library(FD) # Gower metric
-
-
-
-# install.packages('tree')
-library(tree)
