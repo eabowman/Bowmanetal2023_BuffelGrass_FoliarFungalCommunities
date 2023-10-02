@@ -1,12 +1,9 @@
 # Invasive buffelgrass, Cenchrus ciliaris, balances opportunistic acquisition of foliar fungi with host and environmental filtering in its introduced range.
 
----
 github respository name: Bowmanetal2023_BuffelGrass_FoliarFungalCommunities
----
 author: Dr. Liz Bowman
----
 contact: eabowman@utexas.edu
----
+
 Data and analysis code associated with the manuscript "Invasive buffelgrass, Cenchrus ciliaris, balances opportunistic acquisition of foliar fungi with host and environmental filtering in its introduced range."
 
 The following code will load libraries and run the analyses. Output files will go into folders marked figures/ and results/. Please create these folders prior to running the code. Output names should match figure and table names in the manuscript.
