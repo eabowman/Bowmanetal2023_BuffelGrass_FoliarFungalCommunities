@@ -14,9 +14,9 @@
 # Be sure to run the LoadLibraries.R file before running code below.
 
 # read in data
-otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-clim.data <- read_csv('E13-133.data.output/ClimateData.csv')
-other.data <- read_csv('E13-133.data.output/fungal.taxonomy/eukaryote_zotu95-Phylum.csv')
+otu.data <- read.csv('data/SitexSpecies_95sim_Raref.csv')
+clim.data <- read_csv('data/ClimateData.csv')
+other.data <- read_csv('data/eukaryote_zotu95-Phylum.csv')
 
 #========================================================================================#
 # A: Isolate data from C. ciliaris hosts in TX, AZ, and Kenya----
@@ -150,7 +150,7 @@ unique.nat.buff$Range <- 'Native'
 rbind(shared.buff, unique.inv.buff, unique.nat.buff) -> summary.overlap
 
 # read in taxonomic data
-full.data <- read.csv('E13-133.data.output/fungal.taxonomy/TBAS/95sim_assignments_reportET66UU4R.csv')
+full.data <- read.csv('data/95sim_assignments_reportET66UU4R.csv')
 # change OTU column to lower case in both full.data and summary.overlap files
 full.data$otu <- tolower(full.data$otu)
 summary.overlap$OTU <- tolower(summary.overlap$OTU)

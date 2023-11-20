@@ -22,9 +22,9 @@
 #========================================================================================#
 
 # read in data
-otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-clim.data <- read_csv('E13-133.data.output/ClimateData.csv')
-other.data <- read_csv('E13-133.data.output/fungal.taxonomy/eukaryote_zotu95-Phylum.csv')
+otu.data <- read.csv('data/SitexSpecies_95sim_Raref.csv')
+clim.data <- read_csv('data/ClimateData.csv')
+other.data <- read_csv('data/eukaryote_zotu95-Phylum.csv')
 
 #========================================================================================#
 ## A: Isolate data from C. ciliaris hosts in TX, AZ, and Kenya----
@@ -92,7 +92,7 @@ cbind(buffel.data[1:21], comm.data) -> buffel.data
 #========================================================================================#
 
 # import taxonomic data
-tax.data <- read.csv('E13-133.results/OTU_95SeqSim_Rarefied/Native.IntroducedRange.Shared.Unique.Otu/Overlap.tax.csv')
+tax.data <- read.csv('data/Overlap.tax.csv')
 
 ## Indicator species ----
 # isolate community data
@@ -487,12 +487,12 @@ neg.sd <- sd(neg)
 fungal_traits() -> fung.traits.db
 
 ### Read in taxonomic data
-full.data <- read.csv('E13-133.data.output/fungal.taxonomy/TBAS/95sim_assignments_reportET66UU4R.csv')
+full.data <- read.csv('data/95sim_assignments_reportET66UU4R.csv')
 full.data$otu <- tolower(full.data$otu)
 
 ### Isolate the C. ciliaris OTU only
 # read in C. ciliaris dataset
-ciliaris.data <- read.csv('E13-133.data.output/Range_OTU_Overlap.csv')
+ciliaris.data <- read.csv('data/Range_OTU_Overlap.csv')
 
 full.data[full.data$otu %in% ciliaris.data$OTU,] -> subset.data
 
@@ -556,8 +556,8 @@ summary.range %>%
 # Part 2: All data from introduced range ----------------
 #========================================================================================#
 
-otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-clim.data <- as.data.frame(read_csv('E13-133.data.output/ClimateData.csv'))
+otu.data <- read.csv('data/SitexSpecies_95sim_Raref.csv')
+clim.data <- as.data.frame(read_csv('data/ClimateData.csv'))
 
 #----------------------------------------------------------------------#
 ## D: Isolate data from introduced range  -----
@@ -771,7 +771,7 @@ unique(grass.us.otu$Otu) -> grass.us.unique.otu
 cenchrus.us.otu[cenchrus.us.otu$Otu %in% grass.us.unique.otu,] -> shared.otu
 
 # Read in taxonomic data
-full.data <- read.csv('E13-133.data.output/fungal.taxonomy/TBAS/95sim_assignments_reportET66UU4R.csv')
+full.data <- read.csv('data/95sim_assignments_reportET66UU4R.csv')
 
 # Create proportion data
 # change OTU column to lower case in both full.data and summary.overlap files
@@ -903,7 +903,7 @@ chisq.test(class.chi)
 
 # read in data frame with OTU shared between ranges and filter out OTU unique
 # to native or introduced range, only keep shared OTU
-shared.data <- read.csv('E13-133.data.output/Range_OTU_Overlap.csv')
+shared.data <- read.csv('data/Range_OTU_Overlap.csv')
 shared.data <- filter(shared.data, Range == 'Shared')
 
 # remove C. ciliaris data and group data by host species

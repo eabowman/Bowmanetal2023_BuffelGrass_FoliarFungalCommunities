@@ -12,9 +12,9 @@
 
 # Be sure to run the LoadLibraries.R file before running code below.
 
-otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-clim.data <- as.data.frame(read_csv('E13-133.data.output/ClimateData.csv'))
-other.data <- read_csv('E13-133.data.output/fungal.taxonomy/eukaryote_zotu95-Phylum.csv')
+otu.data <- read.csv('data/SitexSpecies_95sim_Raref.csv')
+clim.data <- as.data.frame(read_csv('data/ClimateData.csv'))
+other.data <- read_csv('data/eukaryote_zotu95-Phylum.csv')
 
 #----------------------------------------------------------------------#
 # A: Isolate data from introduced range  -----
@@ -69,8 +69,7 @@ cbind(us.data[1:19], comm.data) -> us.data
 ## Phylogenetic distance-----
 
 ## Create distance matrix
-matK.tree <- read.tree(paste0('E13-133.data.output/plant.taxonomy/MegaX/',
-                              'trnKmatK_branchlengths_bootstrapValues.nwk'))
+matK.tree <- read.tree('data/trnKmatK_branchlengths_bootstrapValues.nwk')
 dist.matrix.2d <-cophenetic.phylo(matK.tree)
 # Principal coordinates analysis (PCoA) to transform the pairwise patristic 
 # distance matrix to phylogenetic eigenvectors 
@@ -175,7 +174,7 @@ data.scores <- data.frame(NMDS1 = jacc.mds$points[,1],
                               MAP = us.data$BIO12)
 
 
-# Figure 5A: By MAP
+# Figure 4A: By MAP
 jacc.plot <- ggplot() +
   geom_point(data = data.scores, aes(x = NMDS1,
                                      y = NMDS2,
@@ -188,11 +187,11 @@ jacc.plot <- ggplot() +
                                  colour = 'Black'),
         axis.title = element_text(size = 16))
 
-# ggsave('Fig4.tiff',
+# ggsave('Fig4A.tiff',
 #        plot = jacc.plot, width = 20, height = 20, units = 'cm')
 
 
-# By host
+# Figure 4B: By host
 jacc.plot <- ggplot() +
   geom_point(data = data.scores, aes(x = NMDS1,
                                      y = NMDS2,
@@ -205,3 +204,5 @@ jacc.plot <- ggplot() +
                                  colour = 'Black'),
         axis.title = element_text(size = 16))
 
+# ggsave('Fig4B.tiff',
+#        plot = jacc.plot, width = 20, height = 20, units = 'cm')
