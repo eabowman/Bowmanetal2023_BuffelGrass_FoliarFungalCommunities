@@ -13,8 +13,6 @@
 # Be sure to run the LoadLibraries.R file before running code below.
 
 otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-meta.data <- read_csv('E13-133.data/Combined_ITS_metadata.csv')
-tax.data <- read_csv('E13-133.data.output/fungal.taxonomy/zotus_95_consensus.csv')
 clim.data <- as.data.frame(read_csv('E13-133.data.output/ClimateData.csv'))
 other.data <- read_csv('E13-133.data.output/fungal.taxonomy/eukaryote_zotu95-Phylum.csv')
 
@@ -71,7 +69,6 @@ cbind(us.data[1:19], comm.data) -> us.data
 ## Phylogenetic distance-----
 
 ## Create distance matrix
-#dist.matrix.1d <- read.csv('E13-133.data.output/trnKmatK_PairwiseDistance.csv')
 matK.tree <- read.tree(paste0('E13-133.data.output/plant.taxonomy/MegaX/',
                               'trnKmatK_branchlengths_bootstrapValues.nwk'))
 dist.matrix.2d <-cophenetic.phylo(matK.tree)

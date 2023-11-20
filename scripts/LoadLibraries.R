@@ -27,7 +27,7 @@ library(cooccur)
 # devtools::install_github("traitecoevo/fungaltraits")
 library(fungaltraits)
 
-# install.packages("remotes")
+install.packages("remotes")
 remotes::install_github("kassambara/rstatix")
 
 install.packages("rcompanion")

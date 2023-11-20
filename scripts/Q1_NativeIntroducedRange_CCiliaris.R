@@ -1,7 +1,6 @@
 ## Script created by Dr. Liz Bowman (eabowman@utexas.edu), May 14, 2021 
-## Focus is to answer question 1: To what extent does an invasive plant’s 
-## phyllosphere fungal community overlap between its native and introduced
-## ranges This includes:
+## Focus is to answer question 1: how an invasive plant’s foliar fungal 
+## community overlaps between its native and introduced ranges. This includes:
 ## a) how similar OTU richness and community composition are between ranges and
 ## b) do similar drives shape community composition between the two ranges
 ## 
@@ -16,7 +15,6 @@
 
 # read in data
 otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-tax.data <- read_csv('E13-133.data.output/fungal.taxonomy/zotus_95_consensus.csv')
 clim.data <- read_csv('E13-133.data.output/ClimateData.csv')
 other.data <- read_csv('E13-133.data.output/fungal.taxonomy/eukaryote_zotu95-Phylum.csv')
 

@@ -23,7 +23,6 @@
 
 # read in data
 otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-tax.data <- read_csv('E13-133.data.output/fungal.taxonomy/zotus_95_consensus.csv')
 clim.data <- read_csv('E13-133.data.output/ClimateData.csv')
 other.data <- read_csv('E13-133.data.output/fungal.taxonomy/eukaryote_zotu95-Phylum.csv')
 
@@ -558,10 +557,7 @@ summary.range %>%
 #========================================================================================#
 
 otu.data <- read.csv('E13-133.data.output/SitexSpecies_95sim_Raref.csv')
-meta.data <- read_csv('E13-133.data/Combined_ITS_metadata.csv')
-tax.data <- read_csv('E13-133.data.output/fungal.taxonomy/zotus_95_consensus.csv')
 clim.data <- as.data.frame(read_csv('E13-133.data.output/ClimateData.csv'))
-other.data <- read_csv('E13-133.data.output/fungal.taxonomy/eukaryote_zotu95-Phylum.csv')
 
 #----------------------------------------------------------------------#
 ## D: Isolate data from introduced range  -----
@@ -1067,3 +1063,48 @@ range.shared[range.shared$OTU %in% us.otu.names,] -> shared.introduced
 
 ## Otus nont found in other native and non-native in introduced range ----
 range.shared[!range.shared$OTU %in% us.otu.names,] -> unique.introduced
+
+# OTUs at the order level -----
+# create dataframe with order data
+us.data %>%
+  select(-Wash, -Plant_Part, -Location, -Latitude, -Longitude, -Year, -samples) %>%
+  gather(key = Query.sequence, value = reads, -Host, -Site, -Range) %>%
+  group_by(Query.sequence, Host, Range) %>%
+  summarise(total = sum(reads)) %>%
+  filter(total > 0) -> order.data
+
+left_join(order.data, full.data) -> order.data.b
+
+# Create count table of orders by host species
+order.data.b %>%
+  group_by(Host, Most.common.order.level.assignment) %>%
+  summarise(count = n()) -> order.summary
+
+order.summary %>%
+  group_by(Host) %>%
+  summarise(total_count = sum(count)) -> host_total
+
+order.summary %>%
+  left_join(host_total, by = "Host") %>%
+  mutate(proportion = count/total_count) %>%
+  filter(Most.common.order.level.assignment %in%
+           c("Pleosporales", "Capnodiales", "Eurotiales", "Hypocreales")) -> order.summary.b
+
+# Plot
+ggplot(order.summary.b,
+       aes(x = Host,
+           y = proportion,
+           fill = Most.common.order.level.assignment)) +
+  geom_bar(stat = "identity") +
+  xlab("") +
+  ylab("Proportion") +
+  theme_bw() +
+  theme(axis.text.y = element_text(size = 12, color = "black"),
+        axis.text.x = element_text(size = 12, color = "black",
+                                   angle = 45, hjust = 1))
+
+# average of order proportion across all host species
+order.summary.b %>%
+  group_by(Most.common.order.level.assignment) %>%
+  summarise(mean.proportion = mean(proportion),
+            sd.proportion = sd(proportion))
