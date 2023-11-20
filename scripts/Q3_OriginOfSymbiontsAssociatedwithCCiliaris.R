@@ -112,8 +112,9 @@ buffel.comm[colSums(buffel.comm) > 1] -> buffel.comm
 ind.range <- multipatt(buffel.comm,
                        cluster = buffel.data$Range,
                        duleg = F,
-                       func = 'r.g',
+                       func = 'IndVal',
                        control = how(nperm = 999))
+summary(ind.range)
 
 # filter Otu with p < 0.05
 ind.range$sign[ind.range$sign$p.value < 0.05,] -> ind.range.sig
@@ -121,15 +122,46 @@ ind.range$sign[ind.range$sign$p.value < 0.05,] -> ind.range.sig
 # filter out NA
 filter(ind.range.sig, p.value > 0) -> ind.range.sig
 
+# add Otu as a column
+ind.range.sig$Otu <- row.names(ind.range.sig)
+
+# add A (specificity) and B (sensitivity) data
+# A represents the specificity or site fidelity of a species to a particular
+# group of sites. It is the porportion of sites within the specified group
+# where the spcies is present.
+# B represents the sensitivity or exclusivity of a species to the specified
+# group of sites. It is the proportion of the total number of sites where the
+# species is present that belongs to the specified group.
+## A
+as.data.frame(ind.range$A) -> ind.A
+## Add Otu as a column
+ind.A$Otu <- rownames(ind.A)
+## join data frames
+left_join(ind.range.sig, ind.A) -> ind.range.sig
+## Change column names for A
+ind.range.sig %>%
+  rename(Invasive.A = Invasive,
+         Native.A = Native,
+         `Invasive+Native.A` = `Invasive+Native`) -> ind.range.sig
+## B
+as.data.frame(ind.range$B) -> ind.B
+## Add Otu as a column
+ind.B$Otu <- rownames(ind.B)
+## join data frames
+left_join(ind.range.sig, ind.B) -> ind.range.sig
+## Change column names for A
+ind.range.sig %>%
+  rename(Invasive.B = Invasive,
+         Native.B = Native,
+         `Invasive+Native.B` = `Invasive+Native`) -> ind.range.sig
+
 # add taxonomic data
 # First add Otus as a column instead of just row names
-ind.range.sig$Otu <- row.names(ind.range.sig)
 left_join(ind.range.sig, tax.data) -> tax.ind.range.sig
 
 # write.csv(tax.ind.range.sig,
-#           'Table3.csv',
+#           'results/Table3.csv',
 #           row.names = F)
-
 
 ## Cooccur analyses ----
 ### Native range ----
