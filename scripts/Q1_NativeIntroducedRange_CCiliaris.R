@@ -222,7 +222,7 @@ class.count %>%
         axis.text.x = element_blank(),
         legend.position = 'right')
 
-# ggsave('Fig3A.tiff',
+# ggsave('Fig3_Partial.tiff',
 #        plot = last_plot(),
 #        width = 20,
 #        height = 20,
@@ -231,10 +231,6 @@ class.count %>%
 ### Chi-square ----
 # Remove shared data
 class.count %>%
-  # filter(Class %in% c('Dothideomycetes', 'Eurotiomycetes',
-  #                     'Orbiliomycetes', 'Leotiomycetes',
-  #                     'Pezizomycetes', 'Saccharomycetes',
-  #                     'Sordariomycetes', 'Xylonomycetes')) %>% # same classes as graph
   filter(Range != 'Shared') %>%
   select(-rel.ab) %>%
   spread(key = Class, value = n, fill = 0) -> class.chi
@@ -278,19 +274,22 @@ jacc.stress <- jacc.mds$stress
 # format data for plot
 data.scores <- data.frame(NMDS1 = jacc.mds$points[,1],
                           NMDS2 = jacc.mds$points[,2],
-                          state = buffel.data.out$Location.state,
+                          State = buffel.data.out$Location.state,
                           site = buffel.data.out$Site,
                           Range = buffel.data.out$Range,
                           MAP = buffel.data.out$MAP,
                           MAT = buffel.data.out$MAT)
+data.scores$State <- factor(data.scores$State,
+       levels = c('Kenya Mpala', 'Kenya Turkana', 'AZ', 'TX'),
+       labels = c('Mpala, Kenya', 'Turkana, Kenya', 'Arizona, USA', 'Texas, USA'))
 
 jacc.plot <- ggplot() + 
   geom_point(data = data.scores, aes(x = NMDS1,
                                      y = NMDS2,
                                      shape = Range,
-                                     color = state),
+                                     color = State),
              size = 4) +
-  scale_color_manual(values = c('#9ecae1','#bdbdbd','#636363','#3182bd')) +
+  scale_color_manual(values = c('#bdbdbd','#636363','#9ecae1','#3182bd')) +
   coord_equal() +
   theme_classic() +
   theme(axis.text = element_text(size = 14,

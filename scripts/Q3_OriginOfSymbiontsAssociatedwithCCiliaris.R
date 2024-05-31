@@ -993,11 +993,11 @@ compare.shared %>%
                                   color = 'black')) +
    labs(fill = "Host native status")
 
-ggsave('SupplementaryFigS3.tiff',
-       plot = last_plot(), 
-       width = 30, 
-       height = 12, 
-       units = 'cm')
+# ggsave('SupplementaryFigS3.tiff',
+#        plot = last_plot(), 
+#        width = 30, 
+#        height = 12, 
+#        units = 'cm')
 
 ### which OTU from the shared species is in the US ----
 shared.data[shared.data$OTU %in% compare.data$OTU,] -> shared.shared
@@ -1015,128 +1015,3 @@ shared.Notshared %>%
 #           'IntroducedRange_UniqueToCiliaris.csv',
 #           row.names = F)
 
-# ----------------------------------------------------------------------#
-## Summary stats ----
-# ----------------------------------------------------------------------#
-
-## OTUs per species, shared and unique: all otu ----
-us.data %>%
-  dplyr::select(-samples, -Latitude, -Longitude, -Year, -Site, -Wash,
-                -Plant_Part, -Location, -Range, -BIO1, -BIO12, -BIO10,
-                -BIO11, -BIO16, -BIO17, -lat, -long, -Host.genus) %>%
-  gather(key = 'OTU', value = 'read.number', -Host) %>%
-  filter(read.number > 0) -> us.filt
-
-status <- data.frame(host = c("Cenchrus_ciliaris", "Bouteloua_curtipendula", "Hilaria_mutica", 
-           "Pappophorum_bicolor", "Bothriochloa_ischaemum",
-           "Heteropogon_contortus", "Sporobolus_cryptandrus", "Setaria",
-           "Aristida", "Chloris", "Sporobolus", "Panicum_antidotale"),
-           status = c("Introduced", "Native", "Native",
-                      "Native", "Nonnative",
-                      "Nonnative", "Native", "Native",
-                      "Native","Native","Native","Nonnative"))
-
-# add native status to us.filt
-for(h in status$host){
-  us.filt[us.filt$Host == h, 'status'] <- status[status$host == h, 'status']
-}
-
-# isolate OTU unique to each group (Cenchrus cilaiaris)
-us.filt %>%
-  filter(Host == 'Cenchrus_ciliaris') %>%
-  distinct(OTU)-> us.buf
-us.filt %>%
-  filter(status == 'Native') %>%
-  distinct(OTU) -> us.nat
-us.filt %>%
-  filter(status == 'Nonnative') %>%
-  distinct(OTU) -> us.nonnat
-
-# Buffel compared to native and nonnative
-# Shared with native 
-us.buf[us.buf$OTU %in% us.nat$OTU,] -> shared.buf.nat
-
-# Shared with non-native 
-us.buf[us.buf$OTU %in% us.nonnat$OTU,] -> shared.buf.nonnat
-
-#Unique
-us.buf[!us.buf$OTU %in% us.nat$OTU & !us.buf$OTU %in% us.nonnat,] -> uniquetobuff.natnonnat
-
-# Unique to native
-us.nat[!us.nat$OTU %in% us.buf$OTU & !us.nat$OTU %in% us.nonnat$OTU,] -> uniquetonat.bufnonnat
-
-# Unique to non-native
-us.nonnat[!us.nonnat$OTU %in% us.buf$OTU & !us.nonnat$OTU %in% us.nat$OTU,] -> uniquetononnat.bufnat
-
-# Compare the OTU from C. cilairis shared between ranges to those found in the introduced range ----
-range.shared <- read.csv('E13-133.data.output/Range_OTU_Overlap.csv')
-
-# isolate shared otu
-range.shared <- filter(range.shared, Range == 'Shared')
-
-# isolate all Otus not within Cenchrus ciliaris
-filter(us.data, Host.genus != 'Cenchrus') -> us.noncenchrus.data
-
-# make sample name row name
-rownames(us.noncenchrus.data) <- us.noncenchrus.data$samples
-
-# remove meta data
-us.otus <- us.noncenchrus.data[23:length(us.noncenchrus.data)]
-us.otus.meta <- us.noncenchrus.data[1:22]
-
-# remove otus with no data
-us.otus[colSums(us.otus) > 0] -> us.otus
-
-# isolate otu names
-tolower(names(us.otus)) -> us.otu.names
-
-## Otus found in other native and non-native in introduced range ----
-range.shared[range.shared$OTU %in% us.otu.names,] -> shared.introduced
-
-## Otus nont found in other native and non-native in introduced range ----
-range.shared[!range.shared$OTU %in% us.otu.names,] -> unique.introduced
-
-# OTUs at the order level -----
-# create dataframe with order data
-us.data %>%
-  select(-Wash, -Plant_Part, -Location, -Latitude, -Longitude, -Year, -samples) %>%
-  gather(key = Query.sequence, value = reads, -Host, -Site, -Range) %>%
-  group_by(Query.sequence, Host, Range) %>%
-  summarise(total = sum(reads)) %>%
-  filter(total > 0) -> order.data
-
-left_join(order.data, full.data) -> order.data.b
-
-# Create count table of orders by host species
-order.data.b %>%
-  group_by(Host, Most.common.order.level.assignment) %>%
-  summarise(count = n()) -> order.summary
-
-order.summary %>%
-  group_by(Host) %>%
-  summarise(total_count = sum(count)) -> host_total
-
-order.summary %>%
-  left_join(host_total, by = "Host") %>%
-  mutate(proportion = count/total_count) %>%
-  filter(Most.common.order.level.assignment %in%
-           c("Pleosporales", "Capnodiales", "Eurotiales", "Hypocreales")) -> order.summary.b
-
-# Plot
-ggplot(order.summary.b,
-       aes(x = Host,
-           y = proportion,
-           fill = Most.common.order.level.assignment)) +
-  geom_bar(stat = "identity") +
-  xlab("") +
-  ylab("Proportion") +
-  theme_bw() +
-  theme(axis.text.y = element_text(size = 12, color = "black"),
-        axis.text.x = element_text(size = 12, color = "black",
-                                   angle = 45, hjust = 1))
-
-# average of order proportion across all host species
-order.summary.b %>%
-  group_by(Most.common.order.level.assignment) %>%
-  summarise(mean.proportion = mean(proportion),
-            sd.proportion = sd(proportion))
